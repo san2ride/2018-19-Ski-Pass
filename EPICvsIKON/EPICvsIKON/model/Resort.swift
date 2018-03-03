@@ -16,7 +16,6 @@ class Resort: NSObject {
     var days: String
     var price: String
     var imageName: String
-    
     var image: UIImage? {
         return UIImage(named: self.imageName)
     }

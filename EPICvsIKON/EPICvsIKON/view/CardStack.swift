@@ -30,35 +30,11 @@ class CardStack: UIView {
     }
     
     func seedResorts() {
-        let Vail = Resort(name: "Vail", pass: "Epic", region: "Rockies", days: "10 Total", price: "879.0", imageName: "vail")
-        self.addResort(resort: Vail)
-        
-        let SquawValley = Resort(name: "Squaw Valley", pass: "Ikon", region: "West", days: "7 Total", price: "899.0", imageName: "squawvalley_alpinemeadows")
-        self.addResort(resort: SquawValley)
-        
-        let DeerValley = Resort(name: "Deer Valley", pass: "Ikon", region: "Rockies", days: "7 Total", price: "899.0", imageName: "deervalley")
-        self.addResort(resort: DeerValley)
-        
-        let Heavenly = Resort(name: "Heavenly", pass: "Epic", region: "West", days: "Unlimited", price: "899.0", imageName: "heavenly")
-        self.addResort(resort: Heavenly)
-        
-        let JacksonHole = Resort(name: "Jackson Hole", pass: "Ikon", region: "Rockies", days: "7 Total", price: "899.0", imageName: "jacksonhole")
-        self.addResort(resort: JacksonHole)
-        
-        let ParkCity = Resort(name: "Park City", pass: "Epic", region: "Rockies", days: "Unlimited", price: "879.0", imageName: "parkcity")
-        self.addResort(resort: ParkCity)
-        
-        let Revelstoke = Resort(name: "Revelstoke", pass: "Ikon", region: "Canada", days: "7 Total", price: "899.0", imageName: "revelstoke")
-        self.addResort(resort: Revelstoke)
-        
-        let Steamboat = Resort(name: "Steamboat", pass: "Ikon", region: "West", days: "7 Total", price: "899.0", imageName: "steamboat")
-        self.addResort(resort: Steamboat)
-        
-        let Telluride = Resort(name: "Telluride", pass: "Epic", region: "Rockies", days: "10 Total", price: "879.0", imageName: "telluride")
-        self.addResort(resort: Telluride)
-        
-        let WhistlerBlackcomb = Resort(name: "Whistler Blackcomb", pass: "Epic", region: "Canada", days: "10 Total", price: "879.0", imageName: "whistler_blackcomb")
-        self.addResort(resort: WhistlerBlackcomb)
+        for index in 0...10 {
+            if let resort = DataStore.instance.resortAtIndex(index) {
+                addResort(resort: resort)
+            }
+        }
     }
     
     func addResort(resort: Resort) {
@@ -109,9 +85,12 @@ class CardStack: UIView {
             let scale = scaleA*(1-CGFloat(percentCompletion))+scaleB*CGFloat(percentCompletion)
             
             var transform = CGAffineTransform.identity
-            transform = CGAffineTransform(translationX: -256, y: -256)
-            transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-            transform = CGAffineTransform(scaleX: 2, y: 2)
+            transform = transform.translatedBy(x: translation, y: 0)
+            transform = transform.rotated(by: rotation)
+            transform = transform.scaledBy(x: scale, y: scale)
+//            transform = CGAffineTransform(translationX: -256, y: -256)
+//            transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+//            transform = CGAffineTransform(scaleX: 1, y: 1)
             
             card.transform = transform
         }
@@ -150,8 +129,10 @@ class CardStack: UIView {
         }
         
         var transform = CGAffineTransform.identity
-        transform = CGAffineTransform(translationX: -256, y: -256)
-        transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi)*percent/30)
+        transform = transform.translatedBy(x: translation.x, y: translation.y)
+        transform = transform.rotated(by: CGFloat(Double.pi)*percent/30)
+//        transform = CGAffineTransform(translationX: -256, y: -256)
+//        transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi)*percent/30)
         
         card.transform = transform
         
@@ -190,19 +171,22 @@ class CardStack: UIView {
                 let normVelY = -velocity.y / translation.y
                 
                 UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: [], animations: { () -> Void in
-                }, completion: nil)
+                    }, completion: nil)
                 
                 UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: normVelX, options: [], animations: { () -> Void in
                     
                     var transform = CGAffineTransform.identity
-                    transform = CGAffineTransform(translationX: -256, y: -256)
+                    transform = transform.translatedBy(x: 0, y: translation.y)
                     card.transform = transform
                     }, completion: nil)
+//                    transform = CGAffineTransform(translationX: -256, y: -256)
+//                    card.transform = transform
+//                    }, completion: nil)
                 
                 UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: normVelY, options: [], animations: { () -> Void in
                     
                     var transform = CGAffineTransform.identity
-                    transform = CGAffineTransform(translationX: -256, y: -256)
+                    transform = transform.translatedBy(x: 0, y: 0)
                     card.transform = transform
                     }, completion: nil)
             }

@@ -55,18 +55,18 @@ class CardView: UIView {
         NSLayoutConstraint(item: imageView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0.8, constant: 0).isActive = true
         
-        nameLabel.font = UIFont(name: "AvenirNext", size: 24)
+        nameLabel.font = UIFont(name: "AvenirNext", size: 32)
         nameLabel.textColor = UIColor.black
         nameLabel.textAlignment = .left
         
-        passLabel.font = UIFont(name: "AvenirNext", size: 18)
-        passLabel.textColor = UIColor.green
+        passLabel.font = UIFont(name: "AvenirNext", size: 32)
+        passLabel.textColor = UIColor.black
         passLabel.textAlignment = .right
         
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
         
-        self.imageView.contentMode = .scaleAspectFill
+        self.imageView.contentMode = .scaleAspectFit
         self.imageView.clipsToBounds = true
     }
 }
