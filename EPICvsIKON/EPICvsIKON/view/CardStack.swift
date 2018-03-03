@@ -30,7 +30,7 @@ class CardStack: UIView {
     }
     
     func seedResorts() {
-        for index in 0...10 {
+        for index in 0...20 {
             if let resort = DataStore.instance.resortAtIndex(index) {
                 addResort(resort: resort)
             }
@@ -88,9 +88,6 @@ class CardStack: UIView {
             transform = transform.translatedBy(x: translation, y: 0)
             transform = transform.rotated(by: rotation)
             transform = transform.scaledBy(x: scale, y: scale)
-//            transform = CGAffineTransform(translationX: -256, y: -256)
-//            transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-//            transform = CGAffineTransform(scaleX: 1, y: 1)
             
             card.transform = transform
         }
@@ -131,14 +128,11 @@ class CardStack: UIView {
         var transform = CGAffineTransform.identity
         transform = transform.translatedBy(x: translation.x, y: translation.y)
         transform = transform.rotated(by: CGFloat(Double.pi)*percent/30)
-//        transform = CGAffineTransform(translationX: -256, y: -256)
-//        transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi)*percent/30)
         
         card.transform = transform
         
         if gesture.state == .ended {
             let velocity = gesture.velocity(in: self)
-            
             let percentBlock = {
                 self.cards.remove(at: self.cards.index(of: card)!)
                 self.setUpGestures()
@@ -179,9 +173,6 @@ class CardStack: UIView {
                     transform = transform.translatedBy(x: 0, y: translation.y)
                     card.transform = transform
                     }, completion: nil)
-//                    transform = CGAffineTransform(translationX: -256, y: -256)
-//                    card.transform = transform
-//                    }, completion: nil)
                 
                 UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: normVelY, options: [], animations: { () -> Void in
                     

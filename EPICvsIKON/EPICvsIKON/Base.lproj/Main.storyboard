@@ -17,7 +17,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.22745098039215686" green="0.82745098039215681" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="jpc-CS-TkA" kind="relationship" relationship="viewControllers" id="YDR-uK-XCi"/>
@@ -27,7 +29,7 @@
             </objects>
             <point key="canvasLocation" x="-303" y="4"/>
         </scene>
-        <!--Item-->
+        <!--Resort Swipe View Controller-->
         <scene sceneID="8mD-pz-ljL">
             <objects>
                 <viewController id="jpc-CS-TkA" customClass="ResortSwipeViewController" customModule="EPICvsIKON" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,6 +37,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silverton_trail_map" translatesAutoresizingMaskIntoConstraints="NO" id="701-BM-D5M">
+                                <rect key="frame" x="0.0" y="20" width="375" height="714"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="714" id="Sib-Z0-hDz"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5x-de-cw2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TuN-bm-fMn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTN-uR-1X0" customClass="CardStack" customModule="EPICvsIKON" customModuleProvider="target">
                                 <rect key="frame" x="37" y="167" width="300" height="334"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,20 +59,32 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iTN-uR-1X0" firstAttribute="centerX" secondItem="DfW-X8-mu5" secondAttribute="centerX" id="7Fx-fR-eaZ"/>
+                            <constraint firstItem="X5x-de-cw2" firstAttribute="bottom" secondItem="Wc9-eB-jX6" secondAttribute="bottom" id="8Or-m4-zfx"/>
+                            <constraint firstItem="701-BM-D5M" firstAttribute="centerX" secondItem="iTN-uR-1X0" secondAttribute="centerX" id="9Ow-BS-RJt"/>
+                            <constraint firstItem="X5x-de-cw2" firstAttribute="leading" secondItem="701-BM-D5M" secondAttribute="leading" id="9mE-tu-5JM"/>
+                            <constraint firstItem="X5x-de-cw2" firstAttribute="top" secondItem="DfW-X8-mu5" secondAttribute="top" id="LGc-Jx-BfR"/>
+                            <constraint firstItem="X5x-de-cw2" firstAttribute="trailing" secondItem="701-BM-D5M" secondAttribute="trailing" id="NDn-1k-bB1"/>
+                            <constraint firstItem="701-BM-D5M" firstAttribute="leading" secondItem="DfW-X8-mu5" secondAttribute="leading" id="aie-gI-cJd"/>
+                            <constraint firstItem="701-BM-D5M" firstAttribute="top" secondItem="Wc9-eB-jX6" secondAttribute="top" id="dBe-ad-0ln"/>
                             <constraint firstItem="iTN-uR-1X0" firstAttribute="centerY" secondItem="DfW-X8-mu5" secondAttribute="centerY" id="ehV-xK-0fJ"/>
                             <constraint firstItem="iTN-uR-1X0" firstAttribute="top" secondItem="Wc9-eB-jX6" secondAttribute="top" constant="147" id="fMJ-w1-Vdw"/>
                             <constraint firstItem="iTN-uR-1X0" firstAttribute="leading" secondItem="Wc9-eB-jX6" secondAttribute="leading" constant="37" id="sFj-A5-hl7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wc9-eB-jX6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="yWO-GF-40a"/>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="yWO-GF-40a">
+                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="cardStackView" destination="iTN-uR-1X0" id="zur-vG-kio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaH-lI-9KV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="3"/>
+            <point key="canvasLocation" x="805.60000000000002" y="2.2488755622188905"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="silverton_trail_map" width="1000" height="1327"/>
+    </resources>
 </document>

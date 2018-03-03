@@ -19,8 +19,8 @@ class DataStore: NSObject {
         let Vail = Resort(name: "Vail", pass: "Epic", region: "Rockies", days: "10 Total", price: "879.0", imageName: "vail")
         self.addResort(Vail)
         
-        let SquawValley = Resort(name: "Squaw Valley", pass: "Ikon", region: "West", days: "7 Total", price: "899.0", imageName: "squawvalley_alpinemeadows")
-        self.addResort(SquawValley)
+        let SquawValleyAlpineMeadows = Resort(name: "Squaw Valley Alpine Meadows", pass: "Ikon", region: "West", days: "7 Total", price: "899.0", imageName: "squawvalley_alpinemeadows")
+        self.addResort(SquawValleyAlpineMeadows)
         
         let DeerValley = Resort(name: "Deer Valley", pass: "Ikon", region: "Rockies", days: "7 Total", price: "899.0", imageName: "deervalley")
         self.addResort(DeerValley)
@@ -45,6 +45,36 @@ class DataStore: NSObject {
         
         let WhistlerBlackcomb = Resort(name: "Whistler Blackcomb", pass: "Epic", region: "Canada", days: "10 Total", price: "879.0", imageName: "whistler_blackcomb")
         self.addResort(WhistlerBlackcomb)
+        
+        let Winterpark = Resort(name: "Winterpark", pass: "IKON", region: "Rockies", days: "7  Total", price: "899.0", imageName: "winterpark")
+        self.addResort(Winterpark)
+        
+        let Tremblant = Resort(name: "Tremblant", pass: "IKON", region: "Canada", days: "7 Total", price: "899.0", imageName: "tremblant")
+        self.addResort(Tremblant)
+        
+        let SundayRiver = Resort(name: "Sunday River", pass: "IKON", region: "East", days: "7 Total", price: "899.0", imageName: "sunday_river")
+        self.addResort(SundayRiver)
+        
+        let Stowe = Resort(name: "Stowe", pass: "Epic", region: "East", days: "Unlimited", price: "899.0", imageName: "stowe")
+        self.addResort(Stowe)
+        
+        let Snowbird = Resort(name: "Snowbird", pass: "IKON", region: "Rockies", days: "7 Total", price: "899.0", imageName: "snowbird")
+        self.addResort(Snowbird)
+        
+        let Mammoth = Resort(name: "Mammoth", pass: "IKON", region: "West", days: "Unlimited", price: "899.0", imageName: "mammoth2")
+        self.addResort(Mammoth)
+        
+        let Heliskiing = Resort(name: "CMH Heliskiing", pass: "IKON", region: "Canada", days: "7 Total", price: "899.0", imageName: "cmh_heliskiing")
+        self.addResort(Heliskiing)
+        
+        let BigskyMontana = Resort(name: "Bigsky Montana", pass: "IKON", region: "Rockies", days: "7 Total", price: "899.0", imageName: "bigsky_montana")
+        self.addResort(BigskyMontana)
+        
+        let AspenSnowmass = Resort(name: "Aspen Snowmass", pass: "IKON", region: "Rockies", days: "10 Total", price: "879.0", imageName: "aspen_snowmass")
+        self.addResort(AspenSnowmass)
+        
+        let ArapahoeBasin = Resort(name: "Arapahoe Basin", pass: "Epic", region: "Rockies", days: "Unlimited", price: "879.0", imageName: "abasin")
+        self.addResort(ArapahoeBasin)
     }
     
     func resortAtIndex(_ index: Int) -> Resort? {
