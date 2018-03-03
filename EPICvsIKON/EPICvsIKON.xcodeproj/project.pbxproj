@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		A4032D672047E1AE000AF279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4032D662047E1AE000AF279 /* AppDelegate.swift */; };
-		A4032D692047E1AE000AF279 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4032D682047E1AE000AF279 /* FirstViewController.swift */; };
-		A4032D6B2047E1AE000AF279 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4032D6A2047E1AE000AF279 /* SecondViewController.swift */; };
 		A4032D6E2047E1AE000AF279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4032D6C2047E1AE000AF279 /* Main.storyboard */; };
 		A4032D702047E1AE000AF279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4032D6F2047E1AE000AF279 /* Assets.xcassets */; };
 		A4032D732047E1AE000AF279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4032D712047E1AE000AF279 /* LaunchScreen.storyboard */; };
+		A4C49BB8204A1FF600A896CD /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BB7204A1FF600A896CD /* Resort.swift */; };
+		A4C49BBA204A25DD00A896CD /* ResortSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BB9204A25DD00A896CD /* ResortSwipeViewController.swift */; };
+		A4C49BC0204A270A00A896CD /* ResortsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BBF204A270A00A896CD /* ResortsTableViewCell.swift */; };
+		A4C49BC2204A2AB900A896CD /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BC1204A2AB900A896CD /* CardStack.swift */; };
+		A4C49BC4204A2AD300A896CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BC3204A2AD300A896CD /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4032D632047E1AE000AF279 /* EPICvsIKON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPICvsIKON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4032D662047E1AE000AF279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4032D682047E1AE000AF279 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A4032D6A2047E1AE000AF279 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A4032D6D2047E1AE000AF279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4032D6F2047E1AE000AF279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4032D722047E1AE000AF279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4032D742047E1AE000AF279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C49BB7204A1FF600A896CD /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
+		A4C49BB9204A25DD00A896CD /* ResortSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortSwipeViewController.swift; sourceTree = "<group>"; };
+		A4C49BBF204A270A00A896CD /* ResortsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortsTableViewCell.swift; sourceTree = "<group>"; };
+		A4C49BC1204A2AB900A896CD /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		A4C49BC3204A2AD300A896CD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +75,7 @@
 		A4032D7A2047E1C5000AF279 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				A4032D682047E1AE000AF279 /* FirstViewController.swift */,
-				A4032D6A2047E1AE000AF279 /* SecondViewController.swift */,
+				A4C49BB9204A25DD00A896CD /* ResortSwipeViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -78,6 +83,9 @@
 		A4032D7B2047E1F0000AF279 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A4C49BC1204A2AB900A896CD /* CardStack.swift */,
+				A4C49BC3204A2AD300A896CD /* CardView.swift */,
+				A4C49BBF204A270A00A896CD /* ResortsTableViewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 		A4032D7C2047E1F7000AF279 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A4C49BB7204A1FF600A896CD /* Resort.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -171,9 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4032D6B2047E1AE000AF279 /* SecondViewController.swift in Sources */,
+				A4C49BC0204A270A00A896CD /* ResortsTableViewCell.swift in Sources */,
+				A4C49BBA204A25DD00A896CD /* ResortSwipeViewController.swift in Sources */,
 				A4032D672047E1AE000AF279 /* AppDelegate.swift in Sources */,
-				A4032D692047E1AE000AF279 /* FirstViewController.swift in Sources */,
+				A4C49BB8204A1FF600A896CD /* Resort.swift in Sources */,
+				A4C49BC4204A2AD300A896CD /* CardView.swift in Sources */,
+				A4C49BC2204A2AB900A896CD /* CardStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D9CKTK39V;
-				INFOPLIST_FILE = EPICvsIKON/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EPICvsIKON/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.EPICvsIKON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -327,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D9CKTK39V;
-				INFOPLIST_FILE = EPICvsIKON/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EPICvsIKON/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.EPICvsIKON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
