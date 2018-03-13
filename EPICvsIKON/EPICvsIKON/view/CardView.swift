@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import CoreData
 
 class CardView: UIView {
+    weak var managedObjectContext: NSManagedObjectContext!
     var resort: Resort! {
         didSet {
             nameLabel.text = resort.name
-            passLabel.text = resort.pass
-            imageView.image = resort.image
+            passLabel.text = resort.passType
+            imageName.image = UIImage(data: resort.image! as Data)
         }
     }
-    
+
     let nameLabel = UILabel()
     let passLabel = UILabel()
-    let imageView = UIImageView()
+    let imageName = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,32 +36,33 @@ class CardView: UIView {
     }
 
     func defaultInit() {
-        self.backgroundColor = UIColor.cyan
+        self.backgroundColor = UIColor.white
         
-        for v in [nameLabel, passLabel, imageView] {
+        for v in [nameLabel, passLabel, imageName] {
             v.translatesAutoresizingMaskIntoConstraints = false
             self.addSubview(v)
         }
+    
         
         //Name
-        NSLayoutConstraint(item: nameLabel, attribute: .top, relatedBy: .equal, toItem: imageView, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: nameLabel, attribute: .top, relatedBy: .equal, toItem: imageName, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: nameLabel, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 7).isActive = true
         NSLayoutConstraint(item: nameLabel, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         
         //Pass
-        NSLayoutConstraint(item: passLabel, attribute: .top, relatedBy: .equal, toItem: imageView, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: passLabel, attribute: .top, relatedBy: .equal, toItem: imageName, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: passLabel, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: -7).isActive = true
         NSLayoutConstraint(item: passLabel, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         
         //Image View
-        NSLayoutConstraint(item: imageView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: imageView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: imageView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0.8, constant: 0).isActive = true
+        NSLayoutConstraint(item: imageName, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: imageName, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: imageName, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: imageName, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0.8, constant: 0).isActive = true
     }
     
     func setUpView() {
-//        nameLabel.font = UIFont(name: "AvenirNext", size: 42)
+        nameLabel.font = UIFont(name: "AvenirNext", size: 42)
         nameLabel.textColor = UIColor.black
         nameLabel.textAlignment = .left
         
@@ -70,7 +73,7 @@ class CardView: UIView {
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
         
-        self.imageView.contentMode = .scaleAspectFit
-        self.imageView.clipsToBounds = true
+        self.imageName.contentMode = .scaleAspectFit
+        self.imageName.clipsToBounds = true
     }
 }

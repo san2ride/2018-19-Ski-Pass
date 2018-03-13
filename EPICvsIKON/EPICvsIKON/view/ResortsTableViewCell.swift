@@ -9,6 +9,14 @@
 import UIKit
 
 class ResortsTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var resortLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var trueSnowLabel: UILabel!
+    @IBOutlet weak var daysToPayBackLabel: UILabel!
+    @IBOutlet weak var verticalDropLabel: UILabel!
+    @IBOutlet weak var resortImageView: UIImageView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +27,19 @@ class ResortsTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    internal func configureCell(resort: Resort) {
+        resortLabel.text = resort.name
+        categoryLabel.text = resort.passType
+        trueSnowLabel.text = String(resort.trueSnowFall)
+        daysToPayBackLabel.text = String(resort.daysToPayBack)
+        verticalDropLabel.text = String(resort.verticalDrop)
+        
+        let image = UIImage(data: resort.image! as Data)
+        resortImageView.image = image
+        resortImageView.layer.borderWidth = 1
+        resortImageView.layer.cornerRadius = 4
     }
 
 }

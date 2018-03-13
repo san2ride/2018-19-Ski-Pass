@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 protocol CardStackDelegate: class {
     func cardInterested(resort: Resort)
@@ -16,11 +17,19 @@ protocol CardStackDelegate: class {
 class CardStack: UIView {
     var cards: [CardView] = []
     weak var delegate: CardStackDelegate?
+    weak var managedObjectContext: NSManagedObjectContext! {
+        didSet {
+            return resort = Resort(context: managedObjectContext)
+        }
+    }
+    
+    lazy var resorts = [Resort]()
+    var resort: Resort? = nil
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
-        seedResorts()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,7 +39,7 @@ class CardStack: UIView {
     }
     
     func seedResorts() {
-        for index in 0...20 {
+        for index in 0...43 {
             if let resort = DataStore.instance.resortAtIndex(index) {
                 addResort(resort: resort)
             }
@@ -120,9 +129,9 @@ class CardStack: UIView {
         
         if percent > 0.2 && gesture.state == .ended {
             // Important call delegate
-            self.delegate?.cardInterested(resort: card.resort)
+            self.delegate?.cardInterested(resort: card.resort!)
         } else if percent < -0.2 && gesture.state == .ended {
-            self.delegate?.cardNotInterested(resort: card.resort)
+            self.delegate?.cardNotInterested(resort: card.resort!)
         }
         
         var transform = CGAffineTransform.identity

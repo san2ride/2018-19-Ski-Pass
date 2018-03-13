@@ -7,31 +7,213 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4004F342051CB380029FFC2 /* Ikon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F2E2051CB380029FFC2 /* Ikon+CoreDataClass.swift */; };
+		A4004F352051CB380029FFC2 /* Ikon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F2F2051CB380029FFC2 /* Ikon+CoreDataProperties.swift */; };
+		A4004F362051CB380029FFC2 /* Epic+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F302051CB380029FFC2 /* Epic+CoreDataClass.swift */; };
+		A4004F372051CB380029FFC2 /* Epic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F312051CB380029FFC2 /* Epic+CoreDataProperties.swift */; };
+		A4004F382051CB380029FFC2 /* Resort+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F322051CB380029FFC2 /* Resort+CoreDataClass.swift */; };
+		A4004F392051CB380029FFC2 /* Resort+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F332051CB380029FFC2 /* Resort+CoreDataProperties.swift */; };
+		A4004F3B2051CCA00029FFC2 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = A4004F3A2051CCA00029FFC2 /* resorts.json */; };
 		A4032D672047E1AE000AF279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4032D662047E1AE000AF279 /* AppDelegate.swift */; };
 		A4032D6E2047E1AE000AF279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4032D6C2047E1AE000AF279 /* Main.storyboard */; };
 		A4032D702047E1AE000AF279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4032D6F2047E1AE000AF279 /* Assets.xcassets */; };
 		A4032D732047E1AE000AF279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4032D712047E1AE000AF279 /* LaunchScreen.storyboard */; };
-		A4C49BB8204A1FF600A896CD /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BB7204A1FF600A896CD /* Resort.swift */; };
-		A4C49BBA204A25DD00A896CD /* ResortSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BB9204A25DD00A896CD /* ResortSwipeViewController.swift */; };
+		A409970620547C6A00E17BB3 /* FavoriteResortController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409970520547C6A00E17BB3 /* FavoriteResortController.swift */; };
+		A40997082054978900E17BB3 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40997072054978900E17BB3 /* ResultController.swift */; };
+		A40B9438204FED240027A327 /* abasin_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93EA204FED230027A327 /* abasin_trail_map.jpg */; };
+		A40B9439204FED240027A327 /* afton_alps_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93EB204FED230027A327 /* afton_alps_trail_map.jpg */; };
+		A40B943A204FED240027A327 /* AftonAlps.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93EC204FED230027A327 /* AftonAlps.jpg */; };
+		A40B943B204FED240027A327 /* AlpineMeadows.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93ED204FED230027A327 /* AlpineMeadows.jpg */; };
+		A40B943C204FED240027A327 /* alpinevalley_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93EE204FED230027A327 /* alpinevalley_trail_map.jpg */; };
+		A40B943D204FED240027A327 /* Alta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93EF204FED230027A327 /* Alta.jpg */; };
+		A40B943E204FED240027A327 /* alta_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F0204FED230027A327 /* alta_trail_map.jpg */; };
+		A40B943F204FED240027A327 /* ArapahoeBasin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F1204FED230027A327 /* ArapahoeBasin.jpg */; };
+		A40B9440204FED240027A327 /* aspen_highlands_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F2204FED230027A327 /* aspen_highlands_trail_map.jpg */; };
+		A40B9441204FED240027A327 /* aspen_mountain_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F3204FED230027A327 /* aspen_mountain_trail_map.jpg */; };
+		A40B9442204FED240027A327 /* aspen_snowmass_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F4204FED230027A327 /* aspen_snowmass_trail_map.jpg */; };
+		A40B9443204FED240027A327 /* AspenSnowmas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F5204FED230027A327 /* AspenSnowmas.jpg */; };
+		A40B9444204FED240027A327 /* banff_sunshine_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F6204FED230027A327 /* banff_sunshine_trail_map.jpg */; };
+		A40B9445204FED240027A327 /* beaver_creek_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F7204FED230027A327 /* beaver_creek_trail_map.jpg */; };
+		A40B9446204FED240027A327 /* BeaverCreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F8204FED230027A327 /* BeaverCreek.jpg */; };
+		A40B9447204FED240027A327 /* BigBear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93F9204FED230027A327 /* BigBear.jpg */; };
+		A40B9448204FED240027A327 /* bigbear_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93FA204FED230027A327 /* bigbear_trail_map.jpg */; };
+		A40B9449204FED240027A327 /* bigsky_montana_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93FB204FED230027A327 /* bigsky_montana_trail_map.jpg */; };
+		A40B944A204FED240027A327 /* BigSkyMontana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93FC204FED230027A327 /* BigSkyMontana.jpg */; };
+		A40B944B204FED240027A327 /* blue_mountain_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93FD204FED230027A327 /* blue_mountain_trail_map.jpg */; };
+		A40B944C204FED240027A327 /* BlueMountainVillage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93FE204FED230027A327 /* BlueMountainVillage.jpg */; };
+		A40B944D204FED240027A327 /* breck_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B93FF204FED230027A327 /* breck_trail_map.jpg */; };
+		A40B944E204FED240027A327 /* Breckenridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9400204FED230027A327 /* Breckenridge.jpg */; };
+		A40B944F204FED240027A327 /* buttermilk_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9401204FED230027A327 /* buttermilk_trail_map.jpg */; };
+		A40B9450204FED240027A327 /* copper_mtn_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9402204FED230027A327 /* copper_mtn_trail_map.jpg */; };
+		A40B9451204FED240027A327 /* CopperMountain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9403204FED230027A327 /* CopperMountain.jpg */; };
+		A40B9452204FED240027A327 /* DeerValley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9404204FED230027A327 /* DeerValley.jpg */; };
+		A40B9453204FED240027A327 /* deervalley_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9405204FED230027A327 /* deervalley_trail_map.jpg */; };
+		A40B9454204FED240027A327 /* Eldora.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9406204FED230027A327 /* Eldora.jpg */; };
+		A40B9455204FED240027A327 /* eldora_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9407204FED230027A327 /* eldora_trail_map.jpg */; };
+		A40B9456204FED240027A327 /* Heavenly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9408204FED230027A327 /* Heavenly.jpg */; };
+		A40B9457204FED240027A327 /* heavenly_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9409204FED230027A327 /* heavenly_trail_map.jpg */; };
+		A40B9458204FED240027A327 /* jackson_hole_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B940A204FED230027A327 /* jackson_hole_trail_map.jpg */; };
+		A40B9459204FED240027A327 /* JacksonHole.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B940B204FED230027A327 /* JacksonHole.jpg */; };
+		A40B945A204FED240027A327 /* june_mtn_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B940C204FED230027A327 /* june_mtn_trail_map.jpg */; };
+		A40B945B204FED240027A327 /* JuneMountain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B940D204FED230027A327 /* JuneMountain.jpg */; };
+		A40B945C204FED240027A327 /* Keystone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B940E204FED230027A327 /* Keystone.jpg */; };
+		A40B945D204FED240027A327 /* keystone_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B940F204FED230027A327 /* keystone_trail_map.jpg */; };
+		A40B945E204FED240027A327 /* Kirkwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9410204FED230027A327 /* Kirkwood.jpg */; };
+		A40B945F204FED240027A327 /* kirkwood_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9411204FED230027A327 /* kirkwood_trail_map.jpg */; };
+		A40B9460204FED240027A327 /* lake_louise_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9412204FED230027A327 /* lake_louise_trail_map.jpg */; };
+		A40B9461204FED240027A327 /* LakeLouise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9413204FED230027A327 /* LakeLouise.jpg */; };
+		A40B9462204FED240027A327 /* Loon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9414204FED230027A327 /* Loon.jpg */; };
+		A40B9463204FED240027A327 /* loon_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9415204FED230027A327 /* loon_trail_map.jpg */; };
+		A40B9464204FED240027A327 /* Mammoth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9416204FED230027A327 /* Mammoth.jpg */; };
+		A40B9465204FED240027A327 /* mammoth_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9417204FED230027A327 /* mammoth_trail_map.jpg */; };
+		A40B9466204FED240027A327 /* ParkCity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9418204FED230027A327 /* ParkCity.jpg */; };
+		A40B9467204FED240027A327 /* parkcity_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9419204FED230027A327 /* parkcity_trail_map.jpg */; };
+		A40B9468204FED240027A327 /* Revelstoke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B941A204FED230027A327 /* Revelstoke.jpg */; };
+		A40B9469204FED240027A327 /* revelstoke_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B941B204FED230027A327 /* revelstoke_trail_map.jpg */; };
+		A40B946A204FED240027A327 /* SNOCRU.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B941C204FED230027A327 /* SNOCRU.png */; };
+		A40B946B204FED240027A327 /* Snowbird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B941D204FED230027A327 /* Snowbird.jpg */; };
+		A40B946C204FED240027A327 /* snowbird_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B941E204FED230027A327 /* snowbird_trail_map.jpg */; };
+		A40B946D204FED240027A327 /* Snowshoe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B941F204FED230027A327 /* Snowshoe.jpg */; };
+		A40B946E204FED240027A327 /* snowshoe_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9420204FED230027A327 /* snowshoe_trail_map.jpg */; };
+		A40B946F204FED240027A327 /* SquawValley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9421204FED230027A327 /* SquawValley.jpg */; };
+		A40B9470204FED240027A327 /* squawvalley_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9422204FED230027A327 /* squawvalley_trail_map.jpg */; };
+		A40B9471204FED240027A327 /* Steamboat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9423204FED230027A327 /* Steamboat.jpg */; };
+		A40B9472204FED240027A327 /* steamboat_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9424204FED230027A327 /* steamboat_trail_map.jpg */; };
+		A40B9473204FED240027A327 /* Stowe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9425204FED230027A327 /* Stowe.jpg */; };
+		A40B9474204FED240027A327 /* stowe_trial_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9426204FED230027A327 /* stowe_trial_map.jpg */; };
+		A40B9475204FED240027A327 /* Stratton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9427204FED230027A327 /* Stratton.jpg */; };
+		A40B9476204FED240027A327 /* stratton_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9428204FED230027A327 /* stratton_trail_map.jpg */; };
+		A40B9477204FED240027A327 /* SugarLoaf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9429204FED230027A327 /* SugarLoaf.jpg */; };
+		A40B9478204FED240027A327 /* sugarloaf_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B942A204FED230027A327 /* sugarloaf_trail_map.jpg */; };
+		A40B9479204FED240027A327 /* sunday_river_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B942B204FED230027A327 /* sunday_river_trail_map.jpg */; };
+		A40B947A204FED240027A327 /* SundayRiver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B942C204FED230027A327 /* SundayRiver.jpg */; };
+		A40B947B204FED240027A327 /* SunshineVillage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B942D204FED230027A327 /* SunshineVillage.jpg */; };
+		A40B947C204FED240027A327 /* Telluride.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B942E204FED230027A327 /* Telluride.jpg */; };
+		A40B947D204FED240027A327 /* telluride_trail_map.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B942F204FED230027A327 /* telluride_trail_map.png */; };
+		A40B947E204FED240027A327 /* Tremblant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9430204FED230027A327 /* Tremblant.jpg */; };
+		A40B947F204FED240027A327 /* tremblant_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9431204FED230027A327 /* tremblant_trail_map.jpg */; };
+		A40B9480204FED240027A327 /* Vail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9432204FED230027A327 /* Vail.jpg */; };
+		A40B9481204FED240027A327 /* vail_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9433204FED230027A327 /* vail_trail_map.jpg */; };
+		A40B9482204FED240027A327 /* whistler_blackcomb_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9434204FED230027A327 /* whistler_blackcomb_trail_map.jpg */; };
+		A40B9483204FED240027A327 /* WhistlerBlackcomb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9435204FED230027A327 /* WhistlerBlackcomb.jpg */; };
+		A40B9484204FED240027A327 /* WinterPark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9436204FED230027A327 /* WinterPark.jpg */; };
+		A40B9485204FED240027A327 /* winterpark_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9437204FED230027A327 /* winterpark_trail_map.jpg */; };
+		A417382F20575801003BA999 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417382E20575801003BA999 /* Double+Extension.swift */; };
+		A447E995205709540027B83E /* PassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447E994205709540027B83E /* PassType.swift */; };
+		A4BD74022050B5140011B462 /* ResortSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD74002050B5130011B462 /* ResortSwipeController.swift */; };
+		A4BD74062050B5550011B462 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD74052050B5550011B462 /* FilterController.swift */; };
 		A4C49BC0204A270A00A896CD /* ResortsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BBF204A270A00A896CD /* ResortsTableViewCell.swift */; };
 		A4C49BC2204A2AB900A896CD /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BC1204A2AB900A896CD /* CardStack.swift */; };
 		A4C49BC4204A2AD300A896CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BC3204A2AD300A896CD /* CardView.swift */; };
 		A4C49BC9204A539900A896CD /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BC8204A539900A896CD /* DataStore.swift */; };
+		A4EC03CD2051AAFA009F244E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC03CC2051AAFA009F244E /* CoreDataStack.swift */; };
+		A4EC03D02051ABC8009F244E /* ResortData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4EC03CE2051ABC8009F244E /* ResortData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4004F2E2051CB380029FFC2 /* Ikon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ikon+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4004F2F2051CB380029FFC2 /* Ikon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ikon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A4004F302051CB380029FFC2 /* Epic+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Epic+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4004F312051CB380029FFC2 /* Epic+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Epic+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A4004F322051CB380029FFC2 /* Resort+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resort+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4004F332051CB380029FFC2 /* Resort+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resort+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A4004F3A2051CCA00029FFC2 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = resorts.json; path = ../../../resorts.json; sourceTree = "<group>"; };
 		A4032D632047E1AE000AF279 /* EPICvsIKON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPICvsIKON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4032D662047E1AE000AF279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4032D6D2047E1AE000AF279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4032D6F2047E1AE000AF279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4032D722047E1AE000AF279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4032D742047E1AE000AF279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4C49BB7204A1FF600A896CD /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
-		A4C49BB9204A25DD00A896CD /* ResortSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortSwipeViewController.swift; sourceTree = "<group>"; };
+		A409970520547C6A00E17BB3 /* FavoriteResortController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteResortController.swift; sourceTree = "<group>"; };
+		A40997072054978900E17BB3 /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		A40B93EA204FED230027A327 /* abasin_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abasin_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93EB204FED230027A327 /* afton_alps_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = afton_alps_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93EC204FED230027A327 /* AftonAlps.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AftonAlps.jpg; sourceTree = "<group>"; };
+		A40B93ED204FED230027A327 /* AlpineMeadows.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlpineMeadows.jpg; sourceTree = "<group>"; };
+		A40B93EE204FED230027A327 /* alpinevalley_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alpinevalley_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93EF204FED230027A327 /* Alta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Alta.jpg; sourceTree = "<group>"; };
+		A40B93F0204FED230027A327 /* alta_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alta_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93F1204FED230027A327 /* ArapahoeBasin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArapahoeBasin.jpg; sourceTree = "<group>"; };
+		A40B93F2204FED230027A327 /* aspen_highlands_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aspen_highlands_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93F3204FED230027A327 /* aspen_mountain_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aspen_mountain_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93F4204FED230027A327 /* aspen_snowmass_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aspen_snowmass_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93F5204FED230027A327 /* AspenSnowmas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AspenSnowmas.jpg; sourceTree = "<group>"; };
+		A40B93F6204FED230027A327 /* banff_sunshine_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banff_sunshine_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93F7204FED230027A327 /* beaver_creek_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beaver_creek_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93F8204FED230027A327 /* BeaverCreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeaverCreek.jpg; sourceTree = "<group>"; };
+		A40B93F9204FED230027A327 /* BigBear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BigBear.jpg; sourceTree = "<group>"; };
+		A40B93FA204FED230027A327 /* bigbear_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bigbear_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93FB204FED230027A327 /* bigsky_montana_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bigsky_montana_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93FC204FED230027A327 /* BigSkyMontana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BigSkyMontana.jpg; sourceTree = "<group>"; };
+		A40B93FD204FED230027A327 /* blue_mountain_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_mountain_trail_map.jpg; sourceTree = "<group>"; };
+		A40B93FE204FED230027A327 /* BlueMountainVillage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlueMountainVillage.jpg; sourceTree = "<group>"; };
+		A40B93FF204FED230027A327 /* breck_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breck_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9400204FED230027A327 /* Breckenridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Breckenridge.jpg; sourceTree = "<group>"; };
+		A40B9401204FED230027A327 /* buttermilk_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttermilk_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9402204FED230027A327 /* copper_mtn_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = copper_mtn_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9403204FED230027A327 /* CopperMountain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CopperMountain.jpg; sourceTree = "<group>"; };
+		A40B9404204FED230027A327 /* DeerValley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DeerValley.jpg; sourceTree = "<group>"; };
+		A40B9405204FED230027A327 /* deervalley_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deervalley_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9406204FED230027A327 /* Eldora.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Eldora.jpg; sourceTree = "<group>"; };
+		A40B9407204FED230027A327 /* eldora_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eldora_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9408204FED230027A327 /* Heavenly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Heavenly.jpg; sourceTree = "<group>"; };
+		A40B9409204FED230027A327 /* heavenly_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heavenly_trail_map.jpg; sourceTree = "<group>"; };
+		A40B940A204FED230027A327 /* jackson_hole_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jackson_hole_trail_map.jpg; sourceTree = "<group>"; };
+		A40B940B204FED230027A327 /* JacksonHole.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JacksonHole.jpg; sourceTree = "<group>"; };
+		A40B940C204FED230027A327 /* june_mtn_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = june_mtn_trail_map.jpg; sourceTree = "<group>"; };
+		A40B940D204FED230027A327 /* JuneMountain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JuneMountain.jpg; sourceTree = "<group>"; };
+		A40B940E204FED230027A327 /* Keystone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Keystone.jpg; sourceTree = "<group>"; };
+		A40B940F204FED230027A327 /* keystone_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = keystone_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9410204FED230027A327 /* Kirkwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kirkwood.jpg; sourceTree = "<group>"; };
+		A40B9411204FED230027A327 /* kirkwood_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kirkwood_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9412204FED230027A327 /* lake_louise_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lake_louise_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9413204FED230027A327 /* LakeLouise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LakeLouise.jpg; sourceTree = "<group>"; };
+		A40B9414204FED230027A327 /* Loon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Loon.jpg; sourceTree = "<group>"; };
+		A40B9415204FED230027A327 /* loon_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loon_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9416204FED230027A327 /* Mammoth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mammoth.jpg; sourceTree = "<group>"; };
+		A40B9417204FED230027A327 /* mammoth_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mammoth_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9418204FED230027A327 /* ParkCity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ParkCity.jpg; sourceTree = "<group>"; };
+		A40B9419204FED230027A327 /* parkcity_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parkcity_trail_map.jpg; sourceTree = "<group>"; };
+		A40B941A204FED230027A327 /* Revelstoke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Revelstoke.jpg; sourceTree = "<group>"; };
+		A40B941B204FED230027A327 /* revelstoke_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = revelstoke_trail_map.jpg; sourceTree = "<group>"; };
+		A40B941C204FED230027A327 /* SNOCRU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SNOCRU.png; sourceTree = "<group>"; };
+		A40B941D204FED230027A327 /* Snowbird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowbird.jpg; sourceTree = "<group>"; };
+		A40B941E204FED230027A327 /* snowbird_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snowbird_trail_map.jpg; sourceTree = "<group>"; };
+		A40B941F204FED230027A327 /* Snowshoe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowshoe.jpg; sourceTree = "<group>"; };
+		A40B9420204FED230027A327 /* snowshoe_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snowshoe_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9421204FED230027A327 /* SquawValley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SquawValley.jpg; sourceTree = "<group>"; };
+		A40B9422204FED230027A327 /* squawvalley_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = squawvalley_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9423204FED230027A327 /* Steamboat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Steamboat.jpg; sourceTree = "<group>"; };
+		A40B9424204FED230027A327 /* steamboat_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steamboat_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9425204FED230027A327 /* Stowe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stowe.jpg; sourceTree = "<group>"; };
+		A40B9426204FED230027A327 /* stowe_trial_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stowe_trial_map.jpg; sourceTree = "<group>"; };
+		A40B9427204FED230027A327 /* Stratton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stratton.jpg; sourceTree = "<group>"; };
+		A40B9428204FED230027A327 /* stratton_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stratton_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9429204FED230027A327 /* SugarLoaf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SugarLoaf.jpg; sourceTree = "<group>"; };
+		A40B942A204FED230027A327 /* sugarloaf_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sugarloaf_trail_map.jpg; sourceTree = "<group>"; };
+		A40B942B204FED230027A327 /* sunday_river_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunday_river_trail_map.jpg; sourceTree = "<group>"; };
+		A40B942C204FED230027A327 /* SundayRiver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SundayRiver.jpg; sourceTree = "<group>"; };
+		A40B942D204FED230027A327 /* SunshineVillage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SunshineVillage.jpg; sourceTree = "<group>"; };
+		A40B942E204FED230027A327 /* Telluride.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Telluride.jpg; sourceTree = "<group>"; };
+		A40B942F204FED230027A327 /* telluride_trail_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = telluride_trail_map.png; sourceTree = "<group>"; };
+		A40B9430204FED230027A327 /* Tremblant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tremblant.jpg; sourceTree = "<group>"; };
+		A40B9431204FED230027A327 /* tremblant_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tremblant_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9432204FED230027A327 /* Vail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vail.jpg; sourceTree = "<group>"; };
+		A40B9433204FED230027A327 /* vail_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vail_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9434204FED230027A327 /* whistler_blackcomb_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whistler_blackcomb_trail_map.jpg; sourceTree = "<group>"; };
+		A40B9435204FED230027A327 /* WhistlerBlackcomb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhistlerBlackcomb.jpg; sourceTree = "<group>"; };
+		A40B9436204FED230027A327 /* WinterPark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WinterPark.jpg; sourceTree = "<group>"; };
+		A40B9437204FED230027A327 /* winterpark_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winterpark_trail_map.jpg; sourceTree = "<group>"; };
+		A417382E20575801003BA999 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		A447E994205709540027B83E /* PassType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassType.swift; sourceTree = "<group>"; };
+		A4BD74002050B5130011B462 /* ResortSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResortSwipeController.swift; sourceTree = "<group>"; };
+		A4BD74052050B5550011B462 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
 		A4C49BBF204A270A00A896CD /* ResortsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortsTableViewCell.swift; sourceTree = "<group>"; };
 		A4C49BC1204A2AB900A896CD /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
 		A4C49BC3204A2AD300A896CD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A4C49BC8204A539900A896CD /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		A4EC03CC2051AAFA009F244E /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A4EC03CF2051ABC8009F244E /* ResortData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResortData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,22 +246,17 @@
 		A4032D652047E1AE000AF279 /* EPICvsIKON */ = {
 			isa = PBXGroup;
 			children = (
-				A4032D662047E1AE000AF279 /* AppDelegate.swift */,
-				A4032D6C2047E1AE000AF279 /* Main.storyboard */,
+				A447E993205709190027B83E /* extension */,
+				A4EC03D12051B3DA009F244E /* entity */,
 				A4032D7C2047E1F7000AF279 /* model */,
 				A4032D7B2047E1F0000AF279 /* view */,
-				A4032D7A2047E1C5000AF279 /* controller */,
+				A4BD74042050B5270011B462 /* Controller */,
+				A4032D662047E1AE000AF279 /* AppDelegate.swift */,
+				A4032D6C2047E1AE000AF279 /* Main.storyboard */,
+				A40B93E9204FED230027A327 /* images */,
 				A4032D7D2047E206000AF279 /* Supporting Files */,
 			);
 			path = EPICvsIKON;
-			sourceTree = "<group>";
-		};
-		A4032D7A2047E1C5000AF279 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				A4C49BB9204A25DD00A896CD /* ResortSwipeViewController.swift */,
-			);
-			path = controller;
 			sourceTree = "<group>";
 		};
 		A4032D7B2047E1F0000AF279 /* view */ = {
@@ -95,8 +272,9 @@
 		A4032D7C2047E1F7000AF279 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A4C49BB7204A1FF600A896CD /* Resort.swift */,
+				A4004F3A2051CCA00029FFC2 /* resorts.json */,
 				A4C49BC8204A539900A896CD /* DataStore.swift */,
+				A4EC03CE2051ABC8009F244E /* ResortData.xcdatamodeld */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -104,11 +282,131 @@
 		A4032D7D2047E206000AF279 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4EC03CC2051AAFA009F244E /* CoreDataStack.swift */,
 				A4032D6F2047E1AE000AF279 /* Assets.xcassets */,
 				A4032D712047E1AE000AF279 /* LaunchScreen.storyboard */,
 				A4032D742047E1AE000AF279 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A40B93E9204FED230027A327 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A40B93EA204FED230027A327 /* abasin_trail_map.jpg */,
+				A40B93EB204FED230027A327 /* afton_alps_trail_map.jpg */,
+				A40B93EC204FED230027A327 /* AftonAlps.jpg */,
+				A40B93ED204FED230027A327 /* AlpineMeadows.jpg */,
+				A40B93EE204FED230027A327 /* alpinevalley_trail_map.jpg */,
+				A40B93EF204FED230027A327 /* Alta.jpg */,
+				A40B93F0204FED230027A327 /* alta_trail_map.jpg */,
+				A40B93F1204FED230027A327 /* ArapahoeBasin.jpg */,
+				A40B93F2204FED230027A327 /* aspen_highlands_trail_map.jpg */,
+				A40B93F3204FED230027A327 /* aspen_mountain_trail_map.jpg */,
+				A40B93F4204FED230027A327 /* aspen_snowmass_trail_map.jpg */,
+				A40B93F5204FED230027A327 /* AspenSnowmas.jpg */,
+				A40B93F6204FED230027A327 /* banff_sunshine_trail_map.jpg */,
+				A40B93F7204FED230027A327 /* beaver_creek_trail_map.jpg */,
+				A40B93F8204FED230027A327 /* BeaverCreek.jpg */,
+				A40B93F9204FED230027A327 /* BigBear.jpg */,
+				A40B93FA204FED230027A327 /* bigbear_trail_map.jpg */,
+				A40B93FB204FED230027A327 /* bigsky_montana_trail_map.jpg */,
+				A40B93FC204FED230027A327 /* BigSkyMontana.jpg */,
+				A40B93FD204FED230027A327 /* blue_mountain_trail_map.jpg */,
+				A40B93FE204FED230027A327 /* BlueMountainVillage.jpg */,
+				A40B93FF204FED230027A327 /* breck_trail_map.jpg */,
+				A40B9400204FED230027A327 /* Breckenridge.jpg */,
+				A40B9401204FED230027A327 /* buttermilk_trail_map.jpg */,
+				A40B9402204FED230027A327 /* copper_mtn_trail_map.jpg */,
+				A40B9403204FED230027A327 /* CopperMountain.jpg */,
+				A40B9404204FED230027A327 /* DeerValley.jpg */,
+				A40B9405204FED230027A327 /* deervalley_trail_map.jpg */,
+				A40B9406204FED230027A327 /* Eldora.jpg */,
+				A40B9407204FED230027A327 /* eldora_trail_map.jpg */,
+				A40B9408204FED230027A327 /* Heavenly.jpg */,
+				A40B9409204FED230027A327 /* heavenly_trail_map.jpg */,
+				A40B940A204FED230027A327 /* jackson_hole_trail_map.jpg */,
+				A40B940B204FED230027A327 /* JacksonHole.jpg */,
+				A40B940C204FED230027A327 /* june_mtn_trail_map.jpg */,
+				A40B940D204FED230027A327 /* JuneMountain.jpg */,
+				A40B940E204FED230027A327 /* Keystone.jpg */,
+				A40B940F204FED230027A327 /* keystone_trail_map.jpg */,
+				A40B9410204FED230027A327 /* Kirkwood.jpg */,
+				A40B9411204FED230027A327 /* kirkwood_trail_map.jpg */,
+				A40B9412204FED230027A327 /* lake_louise_trail_map.jpg */,
+				A40B9413204FED230027A327 /* LakeLouise.jpg */,
+				A40B9414204FED230027A327 /* Loon.jpg */,
+				A40B9415204FED230027A327 /* loon_trail_map.jpg */,
+				A40B9416204FED230027A327 /* Mammoth.jpg */,
+				A40B9417204FED230027A327 /* mammoth_trail_map.jpg */,
+				A40B9418204FED230027A327 /* ParkCity.jpg */,
+				A40B9419204FED230027A327 /* parkcity_trail_map.jpg */,
+				A40B941A204FED230027A327 /* Revelstoke.jpg */,
+				A40B941B204FED230027A327 /* revelstoke_trail_map.jpg */,
+				A40B941C204FED230027A327 /* SNOCRU.png */,
+				A40B941D204FED230027A327 /* Snowbird.jpg */,
+				A40B941E204FED230027A327 /* snowbird_trail_map.jpg */,
+				A40B941F204FED230027A327 /* Snowshoe.jpg */,
+				A40B9420204FED230027A327 /* snowshoe_trail_map.jpg */,
+				A40B9421204FED230027A327 /* SquawValley.jpg */,
+				A40B9422204FED230027A327 /* squawvalley_trail_map.jpg */,
+				A40B9423204FED230027A327 /* Steamboat.jpg */,
+				A40B9424204FED230027A327 /* steamboat_trail_map.jpg */,
+				A40B9425204FED230027A327 /* Stowe.jpg */,
+				A40B9426204FED230027A327 /* stowe_trial_map.jpg */,
+				A40B9427204FED230027A327 /* Stratton.jpg */,
+				A40B9428204FED230027A327 /* stratton_trail_map.jpg */,
+				A40B9429204FED230027A327 /* SugarLoaf.jpg */,
+				A40B942A204FED230027A327 /* sugarloaf_trail_map.jpg */,
+				A40B942B204FED230027A327 /* sunday_river_trail_map.jpg */,
+				A40B942C204FED230027A327 /* SundayRiver.jpg */,
+				A40B942D204FED230027A327 /* SunshineVillage.jpg */,
+				A40B942E204FED230027A327 /* Telluride.jpg */,
+				A40B942F204FED230027A327 /* telluride_trail_map.png */,
+				A40B9430204FED230027A327 /* Tremblant.jpg */,
+				A40B9431204FED230027A327 /* tremblant_trail_map.jpg */,
+				A40B9432204FED230027A327 /* Vail.jpg */,
+				A40B9433204FED230027A327 /* vail_trail_map.jpg */,
+				A40B9434204FED230027A327 /* whistler_blackcomb_trail_map.jpg */,
+				A40B9435204FED230027A327 /* WhistlerBlackcomb.jpg */,
+				A40B9436204FED230027A327 /* WinterPark.jpg */,
+				A40B9437204FED230027A327 /* winterpark_trail_map.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A447E993205709190027B83E /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				A447E994205709540027B83E /* PassType.swift */,
+				A417382E20575801003BA999 /* Double+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		A4BD74042050B5270011B462 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4BD74002050B5130011B462 /* ResortSwipeController.swift */,
+				A409970520547C6A00E17BB3 /* FavoriteResortController.swift */,
+				A4BD74052050B5550011B462 /* FilterController.swift */,
+				A40997072054978900E17BB3 /* ResultController.swift */,
+			);
+			name = Controller;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A4EC03D12051B3DA009F244E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				A4004F322051CB380029FFC2 /* Resort+CoreDataClass.swift */,
+				A4004F332051CB380029FFC2 /* Resort+CoreDataProperties.swift */,
+				A4004F302051CB380029FFC2 /* Epic+CoreDataClass.swift */,
+				A4004F312051CB380029FFC2 /* Epic+CoreDataProperties.swift */,
+				A4004F2E2051CB380029FFC2 /* Ikon+CoreDataClass.swift */,
+				A4004F2F2051CB380029FFC2 /* Ikon+CoreDataProperties.swift */,
+			);
+			path = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +468,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40B9469204FED240027A327 /* revelstoke_trail_map.jpg in Resources */,
+				A40B9463204FED240027A327 /* loon_trail_map.jpg in Resources */,
+				A40B9448204FED240027A327 /* bigbear_trail_map.jpg in Resources */,
+				A40B9462204FED240027A327 /* Loon.jpg in Resources */,
+				A40B9471204FED240027A327 /* Steamboat.jpg in Resources */,
+				A40B944D204FED240027A327 /* breck_trail_map.jpg in Resources */,
+				A40B9482204FED240027A327 /* whistler_blackcomb_trail_map.jpg in Resources */,
+				A40B947C204FED240027A327 /* Telluride.jpg in Resources */,
 				A4032D732047E1AE000AF279 /* LaunchScreen.storyboard in Resources */,
+				A40B945A204FED240027A327 /* june_mtn_trail_map.jpg in Resources */,
+				A40B9485204FED240027A327 /* winterpark_trail_map.jpg in Resources */,
+				A40B9438204FED240027A327 /* abasin_trail_map.jpg in Resources */,
+				A40B943D204FED240027A327 /* Alta.jpg in Resources */,
+				A40B9443204FED240027A327 /* AspenSnowmas.jpg in Resources */,
+				A40B9455204FED240027A327 /* eldora_trail_map.jpg in Resources */,
+				A40B9474204FED240027A327 /* stowe_trial_map.jpg in Resources */,
+				A40B9456204FED240027A327 /* Heavenly.jpg in Resources */,
+				A40B945D204FED240027A327 /* keystone_trail_map.jpg in Resources */,
+				A4004F3B2051CCA00029FFC2 /* resorts.json in Resources */,
+				A40B946C204FED240027A327 /* snowbird_trail_map.jpg in Resources */,
+				A40B9439204FED240027A327 /* afton_alps_trail_map.jpg in Resources */,
+				A40B9475204FED240027A327 /* Stratton.jpg in Resources */,
+				A40B946E204FED240027A327 /* snowshoe_trail_map.jpg in Resources */,
+				A40B9473204FED240027A327 /* Stowe.jpg in Resources */,
+				A40B943B204FED240027A327 /* AlpineMeadows.jpg in Resources */,
+				A40B9452204FED240027A327 /* DeerValley.jpg in Resources */,
+				A40B944B204FED240027A327 /* blue_mountain_trail_map.jpg in Resources */,
+				A40B9479204FED240027A327 /* sunday_river_trail_map.jpg in Resources */,
+				A40B943E204FED240027A327 /* alta_trail_map.jpg in Resources */,
+				A40B9442204FED240027A327 /* aspen_snowmass_trail_map.jpg in Resources */,
+				A40B9466204FED240027A327 /* ParkCity.jpg in Resources */,
 				A4032D702047E1AE000AF279 /* Assets.xcassets in Resources */,
+				A40B9465204FED240027A327 /* mammoth_trail_map.jpg in Resources */,
+				A40B9460204FED240027A327 /* lake_louise_trail_map.jpg in Resources */,
+				A40B945E204FED240027A327 /* Kirkwood.jpg in Resources */,
+				A40B9459204FED240027A327 /* JacksonHole.jpg in Resources */,
+				A40B9447204FED240027A327 /* BigBear.jpg in Resources */,
+				A40B943F204FED240027A327 /* ArapahoeBasin.jpg in Resources */,
+				A40B946B204FED240027A327 /* Snowbird.jpg in Resources */,
+				A40B9476204FED240027A327 /* stratton_trail_map.jpg in Resources */,
+				A40B9458204FED240027A327 /* jackson_hole_trail_map.jpg in Resources */,
+				A40B9457204FED240027A327 /* heavenly_trail_map.jpg in Resources */,
+				A40B946F204FED240027A327 /* SquawValley.jpg in Resources */,
+				A40B9481204FED240027A327 /* vail_trail_map.jpg in Resources */,
+				A40B945F204FED240027A327 /* kirkwood_trail_map.jpg in Resources */,
+				A40B9450204FED240027A327 /* copper_mtn_trail_map.jpg in Resources */,
+				A40B9472204FED240027A327 /* steamboat_trail_map.jpg in Resources */,
+				A40B9480204FED240027A327 /* Vail.jpg in Resources */,
+				A40B9454204FED240027A327 /* Eldora.jpg in Resources */,
+				A40B9464204FED240027A327 /* Mammoth.jpg in Resources */,
+				A40B945B204FED240027A327 /* JuneMountain.jpg in Resources */,
+				A40B9470204FED240027A327 /* squawvalley_trail_map.jpg in Resources */,
+				A40B944E204FED240027A327 /* Breckenridge.jpg in Resources */,
+				A40B9440204FED240027A327 /* aspen_highlands_trail_map.jpg in Resources */,
+				A40B9467204FED240027A327 /* parkcity_trail_map.jpg in Resources */,
+				A40B9446204FED240027A327 /* BeaverCreek.jpg in Resources */,
+				A40B943A204FED240027A327 /* AftonAlps.jpg in Resources */,
+				A40B946A204FED240027A327 /* SNOCRU.png in Resources */,
+				A40B947B204FED240027A327 /* SunshineVillage.jpg in Resources */,
+				A40B947D204FED240027A327 /* telluride_trail_map.png in Resources */,
+				A40B9451204FED240027A327 /* CopperMountain.jpg in Resources */,
+				A40B946D204FED240027A327 /* Snowshoe.jpg in Resources */,
+				A40B945C204FED240027A327 /* Keystone.jpg in Resources */,
+				A40B9478204FED240027A327 /* sugarloaf_trail_map.jpg in Resources */,
+				A40B944A204FED240027A327 /* BigSkyMontana.jpg in Resources */,
+				A40B9444204FED240027A327 /* banff_sunshine_trail_map.jpg in Resources */,
 				A4032D6E2047E1AE000AF279 /* Main.storyboard in Resources */,
+				A40B9461204FED240027A327 /* LakeLouise.jpg in Resources */,
+				A40B9483204FED240027A327 /* WhistlerBlackcomb.jpg in Resources */,
+				A40B943C204FED240027A327 /* alpinevalley_trail_map.jpg in Resources */,
+				A40B9484204FED240027A327 /* WinterPark.jpg in Resources */,
+				A40B9468204FED240027A327 /* Revelstoke.jpg in Resources */,
+				A40B947A204FED240027A327 /* SundayRiver.jpg in Resources */,
+				A40B9445204FED240027A327 /* beaver_creek_trail_map.jpg in Resources */,
+				A40B944F204FED240027A327 /* buttermilk_trail_map.jpg in Resources */,
+				A40B944C204FED240027A327 /* BlueMountainVillage.jpg in Resources */,
+				A40B9453204FED240027A327 /* deervalley_trail_map.jpg in Resources */,
+				A40B947F204FED240027A327 /* tremblant_trail_map.jpg in Resources */,
+				A40B9477204FED240027A327 /* SugarLoaf.jpg in Resources */,
+				A40B9449204FED240027A327 /* bigsky_montana_trail_map.jpg in Resources */,
+				A40B9441204FED240027A327 /* aspen_mountain_trail_map.jpg in Resources */,
+				A40B947E204FED240027A327 /* Tremblant.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,11 +560,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4004F352051CB380029FFC2 /* Ikon+CoreDataProperties.swift in Sources */,
+				A4004F342051CB380029FFC2 /* Ikon+CoreDataClass.swift in Sources */,
+				A40997082054978900E17BB3 /* ResultController.swift in Sources */,
+				A4004F362051CB380029FFC2 /* Epic+CoreDataClass.swift in Sources */,
 				A4C49BC9204A539900A896CD /* DataStore.swift in Sources */,
+				A4004F392051CB380029FFC2 /* Resort+CoreDataProperties.swift in Sources */,
+				A4EC03D02051ABC8009F244E /* ResortData.xcdatamodeld in Sources */,
 				A4C49BC0204A270A00A896CD /* ResortsTableViewCell.swift in Sources */,
-				A4C49BBA204A25DD00A896CD /* ResortSwipeViewController.swift in Sources */,
 				A4032D672047E1AE000AF279 /* AppDelegate.swift in Sources */,
-				A4C49BB8204A1FF600A896CD /* Resort.swift in Sources */,
+				A4004F372051CB380029FFC2 /* Epic+CoreDataProperties.swift in Sources */,
+				A4EC03CD2051AAFA009F244E /* CoreDataStack.swift in Sources */,
+				A417382F20575801003BA999 /* Double+Extension.swift in Sources */,
+				A4BD74022050B5140011B462 /* ResortSwipeController.swift in Sources */,
+				A4BD74062050B5550011B462 /* FilterController.swift in Sources */,
+				A409970620547C6A00E17BB3 /* FavoriteResortController.swift in Sources */,
+				A447E995205709540027B83E /* PassType.swift in Sources */,
+				A4004F382051CB380029FFC2 /* Resort+CoreDataClass.swift in Sources */,
 				A4C49BC4204A2AD300A896CD /* CardView.swift in Sources */,
 				A4C49BC2204A2AB900A896CD /* CardStack.swift in Sources */,
 			);
@@ -374,6 +763,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A4EC03CE2051ABC8009F244E /* ResortData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4EC03CF2051ABC8009F244E /* ResortData.xcdatamodel */,
+			);
+			currentVersion = A4EC03CF2051ABC8009F244E /* ResortData.xcdatamodel */;
+			path = ResortData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A4032D5B2047E1AE000AF279 /* Project object */;
 }
