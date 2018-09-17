@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // First Tab - Resort List
         let resortListNavigationController = tabBarController.viewControllers?[0] as! UINavigationController
-        let resortSwipeController = resortListNavigationController.topViewController as! ResortSwipeController
+        let resortSwipeController = resortListNavigationController.topViewController as! ResortViewController
         resortSwipeController.managedObjectContext = managedObjectContext
         
         // Second Tab - Result View

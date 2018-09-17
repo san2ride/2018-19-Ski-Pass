@@ -13,7 +13,6 @@
 		A4004F372051CB380029FFC2 /* Epic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F312051CB380029FFC2 /* Epic+CoreDataProperties.swift */; };
 		A4004F382051CB380029FFC2 /* Resort+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F322051CB380029FFC2 /* Resort+CoreDataClass.swift */; };
 		A4004F392051CB380029FFC2 /* Resort+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004F332051CB380029FFC2 /* Resort+CoreDataProperties.swift */; };
-		A4004F3B2051CCA00029FFC2 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = A4004F3A2051CCA00029FFC2 /* resorts.json */; };
 		A4032D672047E1AE000AF279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4032D662047E1AE000AF279 /* AppDelegate.swift */; };
 		A4032D6E2047E1AE000AF279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4032D6C2047E1AE000AF279 /* Main.storyboard */; };
 		A4032D702047E1AE000AF279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4032D6F2047E1AE000AF279 /* Assets.xcassets */; };
@@ -100,7 +99,6 @@
 		A40B9485204FED240027A327 /* winterpark_trail_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B9437204FED230027A327 /* winterpark_trail_map.jpg */; };
 		A417382F20575801003BA999 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417382E20575801003BA999 /* Double+Extension.swift */; };
 		A447E995205709540027B83E /* PassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447E994205709540027B83E /* PassType.swift */; };
-		A4BD74022050B5140011B462 /* ResortSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD74002050B5130011B462 /* ResortSwipeController.swift */; };
 		A4BD74062050B5550011B462 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD74052050B5550011B462 /* FilterController.swift */; };
 		A4C49BC0204A270A00A896CD /* ResortsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BBF204A270A00A896CD /* ResortsTableViewCell.swift */; };
 		A4C49BC2204A2AB900A896CD /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BC1204A2AB900A896CD /* CardStack.swift */; };
@@ -108,6 +106,9 @@
 		A4C49BC9204A539900A896CD /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49BC8204A539900A896CD /* DataStore.swift */; };
 		A4EC03CD2051AAFA009F244E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC03CC2051AAFA009F244E /* CoreDataStack.swift */; };
 		A4EC03D02051ABC8009F244E /* ResortData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4EC03CE2051ABC8009F244E /* ResortData.xcdatamodeld */; };
+		AD7545E0214F3EF20098B9DD /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7545DF214F3EF20098B9DD /* resorts.json */; };
+		AD7545E5214F3FE90098B9DD /* ResortSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7545E3214F3FE80098B9DD /* ResortSwipeViewController.swift */; };
+		AD7545EA214F40C60098B9DD /* ResortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7545E9214F40C60098B9DD /* ResortViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,7 +118,6 @@
 		A4004F312051CB380029FFC2 /* Epic+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Epic+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A4004F322051CB380029FFC2 /* Resort+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resort+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A4004F332051CB380029FFC2 /* Resort+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resort+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		A4004F3A2051CCA00029FFC2 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = resorts.json; path = ../../../resorts.json; sourceTree = "<group>"; };
 		A4032D632047E1AE000AF279 /* EPICvsIKON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPICvsIKON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4032D662047E1AE000AF279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4032D6D2047E1AE000AF279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -206,7 +206,6 @@
 		A40B9437204FED230027A327 /* winterpark_trail_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winterpark_trail_map.jpg; sourceTree = "<group>"; };
 		A417382E20575801003BA999 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		A447E994205709540027B83E /* PassType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassType.swift; sourceTree = "<group>"; };
-		A4BD74002050B5130011B462 /* ResortSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResortSwipeController.swift; sourceTree = "<group>"; };
 		A4BD74052050B5550011B462 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
 		A4C49BBF204A270A00A896CD /* ResortsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortsTableViewCell.swift; sourceTree = "<group>"; };
 		A4C49BC1204A2AB900A896CD /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
@@ -214,6 +213,9 @@
 		A4C49BC8204A539900A896CD /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		A4EC03CC2051AAFA009F244E /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A4EC03CF2051ABC8009F244E /* ResortData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResortData.xcdatamodel; sourceTree = "<group>"; };
+		AD7545DF214F3EF20098B9DD /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
+		AD7545E3214F3FE80098B9DD /* ResortSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResortSwipeViewController.swift; sourceTree = "<group>"; };
+		AD7545E9214F40C60098B9DD /* ResortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +274,7 @@
 		A4032D7C2047E1F7000AF279 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A4004F3A2051CCA00029FFC2 /* resorts.json */,
+				AD7545DF214F3EF20098B9DD /* resorts.json */,
 				A4C49BC8204A539900A896CD /* DataStore.swift */,
 				A4EC03CE2051ABC8009F244E /* ResortData.xcdatamodeld */,
 			);
@@ -282,6 +284,7 @@
 		A4032D7D2047E206000AF279 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD7545E3214F3FE80098B9DD /* ResortSwipeViewController.swift */,
 				A4EC03CC2051AAFA009F244E /* CoreDataStack.swift */,
 				A4032D6F2047E1AE000AF279 /* Assets.xcassets */,
 				A4032D712047E1AE000AF279 /* LaunchScreen.storyboard */,
@@ -387,7 +390,7 @@
 		A4BD74042050B5270011B462 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A4BD74002050B5130011B462 /* ResortSwipeController.swift */,
+				AD7545E9214F40C60098B9DD /* ResortViewController.swift */,
 				A409970520547C6A00E17BB3 /* FavoriteResortController.swift */,
 				A4BD74052050B5550011B462 /* FilterController.swift */,
 				A40997072054978900E17BB3 /* ResultController.swift */,
@@ -486,7 +489,7 @@
 				A40B9474204FED240027A327 /* stowe_trial_map.jpg in Resources */,
 				A40B9456204FED240027A327 /* Heavenly.jpg in Resources */,
 				A40B945D204FED240027A327 /* keystone_trail_map.jpg in Resources */,
-				A4004F3B2051CCA00029FFC2 /* resorts.json in Resources */,
+				AD7545E0214F3EF20098B9DD /* resorts.json in Resources */,
 				A40B946C204FED240027A327 /* snowbird_trail_map.jpg in Resources */,
 				A40B9439204FED240027A327 /* afton_alps_trail_map.jpg in Resources */,
 				A40B9475204FED240027A327 /* Stratton.jpg in Resources */,
@@ -561,18 +564,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4004F352051CB380029FFC2 /* Ikon+CoreDataProperties.swift in Sources */,
+				AD7545EA214F40C60098B9DD /* ResortViewController.swift in Sources */,
 				A4004F342051CB380029FFC2 /* Ikon+CoreDataClass.swift in Sources */,
 				A40997082054978900E17BB3 /* ResultController.swift in Sources */,
 				A4004F362051CB380029FFC2 /* Epic+CoreDataClass.swift in Sources */,
 				A4C49BC9204A539900A896CD /* DataStore.swift in Sources */,
 				A4004F392051CB380029FFC2 /* Resort+CoreDataProperties.swift in Sources */,
 				A4EC03D02051ABC8009F244E /* ResortData.xcdatamodeld in Sources */,
+				AD7545E5214F3FE90098B9DD /* ResortSwipeViewController.swift in Sources */,
 				A4C49BC0204A270A00A896CD /* ResortsTableViewCell.swift in Sources */,
 				A4032D672047E1AE000AF279 /* AppDelegate.swift in Sources */,
 				A4004F372051CB380029FFC2 /* Epic+CoreDataProperties.swift in Sources */,
 				A4EC03CD2051AAFA009F244E /* CoreDataStack.swift in Sources */,
 				A417382F20575801003BA999 /* Double+Extension.swift in Sources */,
-				A4BD74022050B5140011B462 /* ResortSwipeController.swift in Sources */,
 				A4BD74062050B5550011B462 /* FilterController.swift in Sources */,
 				A409970620547C6A00E17BB3 /* FavoriteResortController.swift in Sources */,
 				A447E995205709540027B83E /* PassType.swift in Sources */,

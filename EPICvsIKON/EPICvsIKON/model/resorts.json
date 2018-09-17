@@ -1,0 +1,549 @@
+{
+   "resort": [{
+             "name": "Alta",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 521,
+             "daysToPayBack": 10.1,
+             "verticalDrop": 2020,
+             "airport": 45,
+             "image": "Alta.jpg",
+             "trailMapImage": "alta_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Snowbird",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 466,
+             "daysToPayBack": 9.1,
+             "verticalDrop": 3240,
+             "airport": 43,
+             "image": "Snowbird.jpg",
+             "trailMapImage": "snowbird_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Mammoth",
+             "region": "West",
+             "price": 899,
+             "trueSnowfall": 356,
+             "daysToPayBack": 7.1,
+             "verticalDrop": 3100,
+             "airport": 195,
+             "image": "Mammoth.jpg",
+             "trailMapImage": "mammoth_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Aspen Snowmass",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 294,
+             "daysToPayBack": 6,
+             "verticalDrop": 4030,
+             "airport": 20,
+             "image": "AspenSnowmas.jpg",
+             "trailMapImage": "aspen_snowmass_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Jackson Hole",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 368,
+             "daysToPayBack": 6.9,
+             "verticalDrop": 4139,
+             "airport": 34,
+             "image": "JacksonHole.jpg",
+             "trailMapImage": "2jackson_hole_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Revelstoke",
+             "region": "Canada",
+             "price": 899,
+             "trueSnowfall": 359,
+             "daysToPayBack": 9,
+             "verticalDrop": 5620,
+             "airport": 165,
+             "image": "Revelstoke.jpg",
+             "trailMapImage": "revelstoke_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Sunshine Village",
+             "region": "Canada",
+             "price": 899,
+             "trueSnowfall": 257,
+             "daysToPayBack": 12.8,
+             "verticalDrop": 3514,
+             "airport": 96,
+             "image": "SunshineVillage.jpg",
+             "trailMapImage": "banff_sunshine_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Aspen Highlands",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 253,
+             "daysToPayBack": 6,
+             "verticalDrop": 3635,
+             "airport": 13,
+             "image": "AspenSnowmas.jpg",
+             "trailMapImage": "aspen_highlands_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Alpine Meadows",
+             "region": "West",
+             "price": 899,
+             "trueSnowfall": 364,
+             "daysToPayBack": 6.4,
+             "verticalDrop": 1802,
+             "airport": 50,
+             "image": "AlpineMeadows.jpg",
+             "trailMapImage": "alpinevalley_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Winter Park",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 348,
+             "daysToPayBack": 6.2,
+             "verticalDrop": 3060,
+             "airport": 99,
+             "image": "WinterPark.jpg",
+             "trailMapImage": "winterpark_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Steamboat",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 371,
+             "daysToPayBack": 9,
+             "verticalDrop": 3668,
+             "airport": 187,
+             "image": "Steamboat.jpg",
+             "trailMapImage": "2steamboat_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Copper Mountain",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 280,
+             "daysToPayBack": 11.5,
+             "verticalDrop": 2601,
+             "airport": 101,
+             "image": "CopperMountain.jpg",
+             "trailMapImage": "copper_mtn_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Deer Valley",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 275,
+             "daysToPayBack": 6.6,
+             "verticalDrop": 3000,
+             "airport": 45,
+             "image": "DeerValley.jpg",
+             "trailMapImage": "deervalley_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Aspen Ajax",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 252,
+             "daysToPayBack": 6,
+             "verticalDrop": 3267,
+             "airport": 12,
+             "image": "AspenSnowmas.jpg",
+             "trailMapImage": "aspen_mountain_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Eldora",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 225,
+             "daysToPayBack": 10,
+             "verticalDrop": 1600,
+             "airport": 85,
+             "image": "Eldora.jpg",
+             "trailMapImage": "eldora_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Squaw Valley",
+             "region": "West",
+             "price": 899,
+             "trueSnowfall": 368,
+             "daysToPayBack": 6.4,
+             "verticalDrop": 2850,
+             "airport": 52,
+             "image": "SquawValley.jpg",
+             "trailMapImage": "squawvalley_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "June Mountain",
+             "region": "West",
+             "price": 899,
+             "trueSnowfall": 266,
+             "daysToPayBack": 10.1,
+             "verticalDrop": 2590,
+             "airport": 173,
+             "image": "JuneMountain.jpg",
+             "trailMapImage": "june_mtn_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Aspen Buttemilk",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 200,
+             "daysToPayBack": 6,
+             "verticalDrop": 2030,
+             "airport": 7,
+             "image": "AspenSnowmas.jpg",
+             "trailMapImage": "buttermilk_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Lake Louise",
+             "region": "Canada",
+             "price": 899,
+             "trueSnowfall": 169,
+             "daysToPayBack": 13.2,
+             "verticalDrop": 3250,
+             "airport": 121,
+             "image": "LakeLouise.jpg",
+             "trailMapImage": "lake_louise_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Killington",
+             "region": "East",
+             "price": 899,
+             "trueSnowfall": 240,
+             "daysToPayBack": 7.8,
+             "verticalDrop": 3076,
+             "airport": 106,
+             "image": "Killington.jpg",
+             "trailMapImage": "killington_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Big Bear",
+             "region": "West",
+             "price": 899,
+             "trueSnowfall": 83,
+             "daysToPayBack": 11.3,
+             "verticalDrop": 1665,
+             "airport": 136,
+             "image": "BigBear.jpg",
+             "trailMapImage": "bigbear_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Blue Mountain",
+             "region": "Canada",
+             "price": 899,
+             "trueSnowfall": 110,
+             "daysToPayBack": 12.8,
+             "verticalDrop": 742,
+             "airport": 107,
+             "image": "BlueMountainVillage.jpg",
+             "trailMapImage": "blue_mountain_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Sunday River",
+             "region": "East",
+             "price": 899,
+             "trueSnowfall": 150,
+             "daysToPayBack": 10.8,
+             "verticalDrop": 2340,
+             "airport": 107,
+             "image": "SundayRiver.jpg",
+             "trailMapImage": "sunday_river_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Sugarloaf",
+             "region": "East",
+             "price": 899,
+             "trueSnowfall": 173,
+             "daysToPayBack": 10.5,
+             "verticalDrop": 2820,
+             "airport": 147,
+             "image": "SugarLoaf.jpg",
+             "trailMapImage": "sugarloaf_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Mont Tremblant",
+             "region": "Canada",
+             "price": 899,
+             "trueSnowfall": 156,
+             "daysToPayBack": 12.9,
+             "verticalDrop": 2116,
+             "airport": "N/A",
+             "image": "Tremblant.jpg",
+             "trailMapImage": "tremblant_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Stratton",
+             "region": "East",
+             "price": 899,
+             "trueSnowfall": 188,
+             "daysToPayBack": 7.8,
+             "verticalDrop": 2003,
+             "airport": 96,
+             "image": "Stratton.jpg",
+             "trailMapImage": "stratton_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Snowshoe Mountain",
+             "region": "East",
+             "price": 899,
+             "trueSnowfall": 156,
+             "daysToPayBack": 9,
+             "verticalDrop": 1500,
+             "airport": 187,
+             "image": "Snowshoe.jpg",
+             "trailMapImage": "snowshoe_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Loon Mountain",
+             "region": "East",
+             "price": 899,
+             "trueSnowfall": 170,
+             "daysToPayBack": 9.3,
+             "verticalDrop": 2100,
+             "airport": 129,
+             "image": "Loon.jpg",
+             "trailMapImage": "loon_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Big Sky Montana",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 284,
+             "daysToPayBack": 6.4,
+             "verticalDrop": 3666,
+             "airport": 74,
+             "image": "BigSkyMontana.jpg",
+             "trailMapImage": "bigsky_montana_trail_map.jpg",
+             "category": {
+             "passType": "Ikon"
+             }
+             }, {
+             "name": "Afton Alps",
+             "region": "Mid West",
+             "price": 899,
+             "trueSnowfall": 55,
+             "daysToPayBack": 16,
+             "verticalDrop": 350,
+             "airport": 36,
+             "image": "AftonAlps.jpg",
+             "trailMapImage": "afton_alps_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Kirkwood",
+             "region": "West",
+             "price": 899,
+             "trueSnowfall": 463,
+             "daysToPayBack": 9,
+             "verticalDrop": 2000,
+             "airport": 94,
+             "image": "Kirkwood.jpg",
+             "trailMapImage": "kirkwood_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Vail",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 357,
+             "daysToPayBack": 5.4,
+             "verticalDrop": 3450,
+             "airport": 121,
+             "image": "Vail.jpg",
+             "trailMapImage": "vail_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Arapahoe Basin",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 316,
+             "daysToPayBack": 11.8,
+             "verticalDrop": 1692,
+             "airport": 94,
+             "image": "56.jpg",
+             "trailMapImage": "55.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Beaver Creek",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 328,
+             "daysToPayBack": 5.4,
+             "verticalDrop": 3340,
+             "airport": 132,
+             "image": "BeaverCreek.jpg",
+             "trailMapImage": "beaver_creek_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Whistler Blackcomb",
+             "region": "Canada",
+             "price": 899,
+             "trueSnowfall": 443,
+             "daysToPayBack": 11.5,
+             "verticalDrop": 5354,
+             "airport": "140",
+             "image": "WhistlerBlackcomb.jpg",
+             "trailMapImage": "whistler_blackcomb_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Telluride",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 279,
+             "daysToPayBack": 6.6,
+             "verticalDrop": 3845,
+             "airport": 81,
+             "image": "Telluride.jpg",
+             "trailMapImage": "telluride_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Breckenridge",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 283,
+             "daysToPayBack": 5.8,
+             "verticalDrop": 3240,
+             "airport": 111,
+             "image": "Breckenridge.jpg",
+             "trailMapImage": "breck_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Park City",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 290,
+             "daysToPayBack": 7.4,
+             "verticalDrop": 3100,
+             "airport": 40,             "passType": "EPIC",
+             "image": "ParkCity.jpg",
+             "trailMapImage": "parkcity_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Keystone",
+             "region": "Rockies",
+             "price": 899,
+             "trueSnowfall": 235,
+             "daysToPayBack": 7.2,
+             "verticalDrop": 2718,
+             "airport": 102,
+             "image": "Keystone.jpg",
+             "trailMapImage": "keystone_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Heavenly",
+             "region": "West",
+             "price": 899,
+             "trueSnowfall": 322,
+             "daysToPayBack": 7.2,
+             "verticalDrop": 3500,
+             "airport": 73,
+             "image": "Heavenly.jpg",
+             "trailMapImage": "heavenly_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Northstar",
+             "region": "West",
+             "price": 899,
+             "trueSnowfall": 316,
+             "daysToPayBack": 7.2,
+             "verticalDrop": 2280,
+             "airport": 46,
+             "image": "Northstar.jpg",
+             "trailMapImage": "northstar_trail_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }, {
+             "name": "Stowe",
+             "region": "East",
+             "price": 899,
+             "trueSnowfall": 307,
+             "daysToPayBack": 9.8,
+             "verticalDrop": 2160,
+             "airport": 54,
+             "image": "Stowe.jpg",
+             "trailMapImage": "stowe_trial_map.jpg",
+             "category": {
+             "passType": "Epic"
+             }
+             }]
+}
